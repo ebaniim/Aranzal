@@ -839,7 +839,7 @@ def main():
     horses_df, trainers_df, record_df, live_df = load_data()
     
     # Sidebar navigation
-    st.sidebar.image("https://via.placeholder.com/300x150/FF6B35/FFFFFF?text=Naadam+2025", use_column_width=True)
+    st.sidebar.image(r"data/logo.png", use_column_width=True)
     st.sidebar.markdown("## 🚀 Navigation")
     
     # Dashboard selection
@@ -880,3 +880,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
