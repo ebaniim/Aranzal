@@ -195,10 +195,10 @@ def generate_demo_data():
 def load_data():
     """Load data from CSV files or generate demo data"""
     try:
-        horses_df = pd.read_csv(r"C:\Users\enkhb\Downloads\gwg_project\mongolian_datasets\horse.csv")
-        trainers_df = pd.read_csv(r"C:\Users\enkhb\Downloads\gwg_project\mongolian_datasets\trainer.csv")
-        record_df = pd.read_csv(r"C:\Users\enkhb\Downloads\gwg_project\mongolian_datasets\record.csv")
-        live_df = pd.read_csv(r"C:\Users\enkhb\Downloads\gwg_project\mongolian_datasets\live.csv")
+        horses_df = pd.read_csv(r"data/horse.csv")
+        trainers_df = pd.read_csv(r"data/trainer.csv")
+        record_df = pd.read_csv(r"data/record.csv")
+        live_df = pd.read_csv(r"data/live.csv")
         return horses_df, trainers_df, record_df, live_df
     except FileNotFoundError:
         st.info("📁 CSV files not found. Using demo data for presentation.")
@@ -878,4 +878,5 @@ def main():
     st.sidebar.markdown(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 if __name__ == "__main__":
+
     main()
