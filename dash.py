@@ -278,7 +278,7 @@ def overview_dashboard(horses_df, trainers_df, record_df):
             orientation='h',
             title="🎨 Морины Өнгөний Тархалт",
             labels={'x': 'Морины Тоо', 'y': 'Өнгө'},
-            color=color_dist.values,-₮
+            color=color_dist.values,
             color_continuous_scale='rainbow'
         )
         st.plotly_chart(fig_colors, use_container_width=True)
@@ -882,3 +882,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
