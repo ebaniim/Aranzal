@@ -286,7 +286,7 @@ def overview_dashboard(horses_df, trainers_df, record_df):
 def race_record_dashboard(record_df, horses_df):
     """Уралдааны рэкордын самбар - дэлгэрэнгүй шинжилгээ"""
     
-    st.markdown('<h2 class="sub-header">🏁 Уралдааны Бичлэгийн Шинжилгээ - Наадам 2025 Даага</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="sub-header">🏁 Уралдааны Рэкордын Шинжилгээ - Наадам 2025 Даага</h2>', unsafe_allow_html=True)
     
     # Уралдааны хураангуй
     col1, col2, col3, col4 = st.columns(4)
@@ -881,6 +881,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
