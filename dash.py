@@ -840,7 +840,7 @@ def main():
     
     # Хажуугийн навигаци
     try:
-        st.sidebar.image(r"data/logo.png", use_column_width=True)
+        st.sidebar.image(r"data/logo.png", use_container_width=True)
     except:
         st.sidebar.markdown("## 🏇 Наадам 2025")
     #st.sidebar.markdown("## 🚀 Навигаци")
@@ -881,6 +881,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
