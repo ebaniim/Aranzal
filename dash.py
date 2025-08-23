@@ -843,12 +843,12 @@ def main():
         st.sidebar.image(r"data/logo.png", use_column_width=True)
     except:
         st.sidebar.markdown("## 🏇 Наадам 2025")
-    st.sidebar.markdown("## 🚀 Навигаци")
+    #st.sidebar.markdown("## 🚀 Навигаци")
     
     # Самбарын сонголт
     dashboard = st.sidebar.selectbox(
         "Самбар Сонгох",
-        ["🏇 Ерөнхий", "🏁 Уралдааны Бичлэг", "📡 Шууд Дүрслэл", "👤 Хувийн Мэдээлэл", "🗺️ Газарзүйн"]
+        ["🏇 Ерөнхий", "🏁 Уралдааны рэкорд", "📡 Шууд Дүрслэл", "👤 Хувийн Мэдээлэл", "🗺️ Газарзүйн"]
     )
     
     # Хажуугийн өгөгдлийн хураангуй
@@ -881,5 +881,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
