@@ -848,7 +848,7 @@ def main():
     # Самбарын сонголт
     dashboard = st.sidebar.selectbox(
         "Самбар Сонгох",
-        ["🏇 Ерөнхий", "🏁 Уралдааны бичлэг", "📡 Шууд Дүрслэл", "👤 Хувийн Мэдээлэл", "🗺️ Газарзүйн"]
+        ["🏇 Ерөнхий", "🏁 Уралдааны Рэкорд", "📡 Шууд Дүрслэл", "👤 Хувийн Мэдээлэл", "🗺️ Газарзүйн"]
     )
     
     # Хажуугийн өгөгдлийн хураангуй
@@ -862,7 +862,7 @@ def main():
     if dashboard == "🏇 Ерөнхий":
         overview_dashboard(horses_df, trainers_df, record_df)
     
-    elif dashboard == "🏁 Уралдааны Бичлэг":
+    elif dashboard == "🏁 Уралдааны Рэкорд":
         race_record_dashboard(record_df, horses_df)
     
     elif dashboard == "📡 Шууд Дүрслэл":
@@ -881,6 +881,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
