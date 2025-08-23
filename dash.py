@@ -854,7 +854,7 @@ def main():
     # Хажуугийн өгөгдлийн хураангуй
     st.sidebar.markdown("## 📊 Өгөгдлийн Хураангуй")
     st.sidebar.metric("Нийт Морь", len(horses_df))
-    st.sidebar.metric("Нийт Сургагч", len(trainers_df))
+    st.sidebar.metric("Нийт Уяач", len(trainers_df))
     st.sidebar.metric("Уралдааны Оролцогч", len(record_df))
     st.sidebar.metric("Шууд Өгөгдлийн Цэг", len(live_df))
     
@@ -877,9 +877,9 @@ def main():
     # Доод талын мэдээлэл
     st.sidebar.markdown("---")
     st.sidebar.markdown("**🏇 Наадам 2025 Самбар**")
-    st.sidebar.markdown("Streamlit болон Plotly-ээр бүтээгдсэн")
     st.sidebar.markdown(f"Сүүлд шинэчлэгдсэн: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 if __name__ == "__main__":
     main()
+
 
