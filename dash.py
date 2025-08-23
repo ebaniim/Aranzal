@@ -284,7 +284,7 @@ def overview_dashboard(horses_df, trainers_df, record_df):
         st.plotly_chart(fig_colors, use_container_width=True)
 
 def race_record_dashboard(record_df, horses_df):
-    """Уралдааны бичлэгийн самбар - дэлгэрэнгүй шинжилгээ"""
+    """Уралдааны рэкордын самбар - дэлгэрэнгүй шинжилгээ"""
     
     st.markdown('<h2 class="sub-header">🏁 Уралдааны Бичлэгийн Шинжилгээ - Наадам 2025 Даага</h2>', unsafe_allow_html=True)
     
@@ -881,6 +881,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
