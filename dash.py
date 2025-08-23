@@ -856,7 +856,7 @@ def main():
     st.sidebar.metric("Нийт Морь", len(horses_df))
     st.sidebar.metric("Нийт Уяач", len(trainers_df))
     st.sidebar.metric("Уралдааны Оролцогч", len(record_df))
-    st.sidebar.metric("Шууд Өгөгдлийн Цэг", len(live_df))
+    #st.sidebar.metric("Шууд Өгөгдлийн Цэг", len(live_df))
     
     # Үндсэн самбарын агуулга
     if dashboard == "🏇 Ерөнхий":
@@ -881,6 +881,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
